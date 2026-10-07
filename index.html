@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FFI — Trading Infrastructure</title>
+<meta name="description" content="FFI builds automated trading and market-data infrastructure, engineered with Claude as its core development agent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfbfa;--fg:#16181d;--muted:#5d6370;--line:#e4e4e0;--card:#ffffff;--accent:#c2562f}
+@media (prefers-color-scheme:dark){:root{--bg:#111214;--fg:#ececea;--muted:#9a9ea8;--line:#26282d;--card:#17181b;--accent:#e07a52}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:28px 0;display:flex;justify-content:space-between;align-items:center}
+.logo{font:700 20px/1 Inter;letter-spacing:.04em}
+.logo span{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:var(--fg)}
+.hero{padding:72px 0 56px}
+.eyebrow{font:500 12px/1 "JetBrains Mono",monospace;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(32px,5.5vw,50px);line-height:1.12;letter-spacing:-.02em;margin:18px 0 20px;font-weight:700}
+.lead{font-size:19px;color:var(--muted);max-width:640px}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;font-family:"JetBrains Mono",monospace;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
+.card h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.prose p{max-width:680px;margin-bottom:14px}
+ul.list{padding-left:18px;max-width:680px}
+ul.list li{margin-bottom:8px}
+.contact a{color:var(--accent);text-decoration:none;font-weight:500}
+footer{padding:36px 0 48px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">FFI<span>.</span></div>
+  <nav><a href="#platform">Platform</a><a href="#engineering">Engineering</a><a href="#contact">Contact</a></nav>
+</header>
+
+<div class="hero">
+  <div class="eyebrow">Fintech infrastructure · Türkiye</div>
+  <h1>Automated trading and market-data infrastructure.</h1>
+  <p class="lead">FFI builds and operates an in-house platform for multi-venue trading across centralized exchanges and on-chain markets — from real-time market data to execution, settlement and accounting.</p>
+</div>
+
+<section id="platform">
+  <h2>Platform</h2>
+  <div class="grid">
+    <div class="card"><h3>Multi-venue execution</h3><p>Cross-exchange arbitrage across CEX and on-chain venues with strict price-controlled orders, hedging and inventory rebalancing.</p></div>
+    <div class="card"><h3>Market-data service</h3><p>A shared real-time data layer that streams order books and prices from multiple venues to every service in the platform.</p></div>
+    <div class="card"><h3>Signing &amp; relay server</h3><p>Central transaction signing and routing with per-application wallet isolation and transfer safety checks.</p></div>
+    <div class="card"><h3>Ledger &amp; analytics</h3><p>Append-only accounting, invariant monitoring and dashboards that keep every trade and transfer reconciled.</p></div>
+  </div>
+</section>
+
+<section id="engineering">
+  <h2>Engineering with Claude</h2>
+  <div class="prose">
+    <p>The platform is roughly ten interconnected Python and TypeScript services running in production, built by a small team. Claude is our core engineering agent.</p>
+  </div>
+  <ul class="list">
+    <li>Writing, reviewing and refactoring production code with test-driven development</li>
+    <li>Multi-agent code audits covering correctness, money-path safety and security</li>
+    <li>Analysis of trade and ledger data, incident summaries and daily operational reports</li>
+    <li>Technical documentation and shared engineering standards in English and Turkish</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p class="prose">Candaş Sonuzun — Founder<br><a href="mailto:candassonuzun@miniworks3d.com">candassonuzun@miniworks3d.com</a></p>
+</section>
+
+<footer>© 2026 FFI · operated by Miniworks3D</footer>
+</div>
+</body>
+</html>
